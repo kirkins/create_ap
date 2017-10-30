@@ -14,6 +14,10 @@
 #    dnsmasq
 #    iptables
 
+# Quick fix for enviornment issue on embedded device
+# TODO figure out root cause of ENV issue
+source ~/.profile
+
 VERSION=0.4.6
 PROGNAME="$(basename $0)"
 
