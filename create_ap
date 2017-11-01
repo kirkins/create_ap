@@ -1269,11 +1269,6 @@ if [[ -n "$LIST_CLIENTS_ID" ]]; then
     exit 0
 fi
 
-if [[ $(id -u) -ne 0 ]]; then
-    echo "You must run it as root." >&2
-    exit 1
-fi
-
 if [[ -n "$STOP_ID" ]]; then
     echo "Trying to kill $PROGNAME instance associated with $STOP_ID..."
     send_stop "$STOP_ID"
